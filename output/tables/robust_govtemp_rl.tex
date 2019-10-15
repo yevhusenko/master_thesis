@@ -1,0 +1,19 @@
+\begin{longtable}{m{5cm}*{6}{c}}                                         \caption{Robustness Checks: Market-Friendly Incumbents and Government Tampering with the Economy\label{govtemprl}}\\                                         \toprule                                         &\multicolumn{3}{c}{$\text{Real HH deposit growth}_{it}$} & \multicolumn{3}{c}{$\text{Real loan growth}_{it}$} \\ \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+                    &         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+\midrule\endfirsthead                                         \multicolumn{7}{r}{\textit{Table~\ref{govtemprl} continued}} \\                                         \toprule\endhead\midrule\endfoot\endlastfoot
+$\text{Election}_{it}$&       2.034   &       2.250   &       3.580   &       3.403   &       3.491   &       3.117   \\
+                    &     (3.017)   &     (2.955)   &     (3.326)   &     (3.104)   &     (3.230)   &     (4.203)   \\
+\multirow{2}{4.5cm}{$\text{Election}_{it}$ $\times$ $\text{Market-friendly}_{it}$}&      -4.845** &      -4.382*  &      -3.970   &      -3.155   &      -3.144   &      -3.535   \\
+                    &     (2.193)   &     (2.330)   &     (2.678)   &     (1.929)   &     (2.075)   &     (2.563)   \\
+\multirow{2}{4.5cm}{$\text{Election}_{it}$ $\times$ $\text{Bad economy}_{it-1}$}&      -1.226   &      -1.779   &      -3.625   &      -2.288   &      -2.902   &      -2.058   \\
+                    &     (2.435)   &     (2.464)   &     (2.852)   &     (2.456)   &     (2.605)   &     (3.205)   \\
+\midrule
+Observations        &         392   &         392   &         340   &         547   &         547   &         477   \\
+F-test              &        8.63   &        6.62   &        4.41   &       39.35   &       19.13   &       13.32   \\
+Estimator           &         OLS   &      Within   &          AB   &         OLS   &      Within   &          AB   \\
+Year FE             &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+Country FE          &          No   &         Yes   &         Yes   &          No   &         Yes   &         Yes   \\
+N. of instruments   &               &               &          38   &               &               &          47   \\
+AR(2) \(p\)         &               &               &       0.598   &               &               &       0.193   \\
+Hansen J test \(p\) &               &               &       0.116   &               &               &       0.189   \\
+\bottomrule                                          \multicolumn{7}{m{\linewidth}}{\footnotesize This table reports estimates of Equation~\eqref{model4} with $ Bad\ Economy_{it} $ and its interaction wtih $ Election_{it} $ as additional controls. The case when year-on-year percent change in real household deposits with commercial banks in country $ i $ and year $ t $ is the dependent variable as well as that when year-on-year percent change in real loans outstanding is the dependent variable are estimated. $ Bad\ Economy_{it} $ is coded as 1 if the country-year belongs to the bottom 50 percentile with respect to real GDP growth. $ Election_{it} $ is 1 if country $ i $ held an executive election in year $ t $ and $ Market\text{-}Friendly_{it} $ is 1 if the incumbent is right- or center-leaning. Standard errors are clustered on the country level and reported in parentheses. Critical values for F-test at 0.01 significance level and actual degrees of freedom range from 2.02 to 2.19. \( * p<0.1, ** p<0.05, *** p<0.01 \). }\\                                          \end{longtable}

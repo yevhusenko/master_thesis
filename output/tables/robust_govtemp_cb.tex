@@ -1,0 +1,19 @@
+\begin{longtable}{m{4.5cm}*{6}{c}}                                         \caption{Robustness Checks: Limits on the Executive Authority and Government Tampering with the Economy\label{govtempcb}}\\                                         \toprule                                         &\multicolumn{3}{c}{$\text{Real HH deposit growth}_{it}$} & \multicolumn{3}{c}{$\text{Real loan growth}_{it}$} \\ \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+                    &         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+\midrule\endfirsthead                                         \multicolumn{7}{r}{\textit{Table~\ref{govtempcb} continued}} \\                                         \toprule\endhead\midrule\endfoot\endlastfoot
+$\text{Election}_{it}$&      -0.885   &      -0.929   &      -0.636   &      -2.609***&      -2.853***&      -2.045*  \\
+                    &     (0.967)   &     (0.910)   &     (1.049)   &     (0.850)   &     (0.845)   &     (1.078)   \\
+\multirow{2}{4.5cm}{$\text{Election}_{it}$ $\times$ $\text{Weak C\&B}_{it}$}&      -2.666   &      -2.363   &      -2.547   &       4.158** &       4.293** &       3.799*  \\
+                    &     (2.234)   &     (2.141)   &     (2.329)   &     (1.689)   &     (1.695)   &     (2.104)   \\
+\multirow{2}{4.5cm}{$\text{Election}_{it}$ $\times$ $\text{Strong economy}_{it-1}$}&       0.742   &       0.993   &       2.069   &       1.084   &       1.516   &       0.746   \\
+                    &     (1.930)   &     (1.924)   &     (2.186)   &     (1.812)   &     (1.859)   &     (2.308)   \\
+\midrule
+Observations        &         530   &         530   &         472   &         744   &         744   &         662   \\
+F-test              &       10.80   &        7.79   &        3.85   &       54.26   &       36.52   &       14.07   \\
+Estimator           &         OLS   &      Within   &          AB   &         OLS   &      Within   &          AB   \\
+Year FE             &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+Country FE          &          No   &         Yes   &         Yes   &          No   &         Yes   &         Yes   \\
+N. of instruments   &               &               &          41   &               &               &          46   \\
+AR(2) \(p\)         &               &               &       0.839   &               &               &       0.111   \\
+Hansen J test \(p\) &               &               &       0.300   &               &               &       0.024   \\
+\bottomrule                                          \multicolumn{7}{m{\linewidth}}{\footnotesize This table reports estimates of Equation~\eqref{model2} with $ Strong\ Economy_{it} $ and its interaction wtih $ Election_{it} $ as additional controls. The case when year-on-year percent change in real household deposits with commercial banks in country $ i $ and year $ t $ is the dependent variable as well as that when year-on-year percent change in real loans outstanding is the dependent variable are estimated. $ Strong\ Economy_{it} $ is coded as 1 if the country-year belongs to the top 50 percentile with respect to real GDP growth. $ Election_{it} $ is 1 if country $ i $ held an executive election in year $ t $ and $ Weak\ C\&B_{it} $ is 1 if country-year belongs to the bottom half of all country-years with respect to constraints on executive authority. Standard errors are clustered on the country level and reported in parentheses. Critical values for F-test at 0.01 significance level and actual degrees of freedom range from 1.98 to 2.14. \( * p<0.1, ** p<0.05, *** p<0.01 \). }\\                                          \end{longtable}

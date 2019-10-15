@@ -1,0 +1,41 @@
+\begin{longtable}{m{8cm}*{4}{c}}                                         \caption{Political Uncertainty and Bank Deposit Growth: Deposit Insurance \label{dideposits}}\\                                         \toprule                                         &\multicolumn{4}{c}{$\text{Real HH deposit growth}_{it}$} \\ \cmidrule(lr){2-5}
+                    &         (1)   &         (2)   &         (3)   &         (4)   \\
+\midrule\endfirsthead                                         \multicolumn{5}{r}{\textit{Table~\ref{baselinedeposits} continued}} \\                                         \toprule\endhead\midrule\endfoot\endlastfoot
+$\text{Election}_{it}$&      -2.163   &      -1.242   &      -0.732   &      -0.206   \\
+                    &     (4.749)   &     (4.707)   &     (4.582)   &     (5.943)   \\
+$\text{Election}_{it}$ $\times$ $\text{Deposit insurance}_{it-1}$&       0.405   &      -0.364   &      -0.853   &      -1.345   \\
+                    &     (4.779)   &     (4.789)   &     (4.703)   &     (6.027)   \\
+$\text{Deposit insurance}_{it-1}$&      -1.652   &      -1.455   &       1.616   &     -10.967** \\
+                    &     (2.100)   &     (2.115)   &     (1.992)   &     (4.644)   \\
+$\text{Property rights}_{it-1}$&      -0.092** &      -0.090** &      -0.133   &       0.041   \\
+                    &     (0.041)   &     (0.040)   &     (0.100)   &     (0.188)   \\
+$\text{Corruption perception}_{it-1}$&       0.103*  &       0.102*  &       0.067   &       0.126   \\
+                    &     (0.054)   &     (0.056)   &     (0.152)   &     (0.254)   \\
+$\text{Weak C\&B}_{it}$&       0.152   &       0.431   &       0.417   &       1.137   \\
+                    &     (0.717)   &     (0.761)   &     (1.558)   &     (2.512)   \\
+$\text{Inflation CPI}_{it-1}$&      -0.351** &      -0.376** &      -0.371   &       0.001   \\
+                    &     (0.160)   &     (0.179)   &     (0.232)   &     (0.277)   \\
+$\log(\text{Real GDP per capita}_{it-1})$&      -2.024***&      -1.965** &      -8.657   &     -48.661** \\
+                    &     (0.703)   &     (0.807)   &    (13.619)   &    (23.831)   \\
+$\text{Real GDP growth}_{it-1}$&       0.360** &       0.371*  &       0.176   &      -0.232   \\
+                    &     (0.160)   &     (0.214)   &     (0.249)   &     (0.282)   \\
+$\text{Unemployment}_{it-1}$&       0.011   &       0.032   &      -0.298   &      -0.890** \\
+                    &     (0.076)   &     (0.079)   &     (0.267)   &     (0.426)   \\
+$\text{Capital ratio}_{it-1}$&       0.003   &       0.072   &       0.068   &      -2.406   \\
+                    &     (0.179)   &     (0.180)   &     (0.486)   &     (2.366)   \\
+$\text{Deposits to GDP}_{it-1}$&      -0.006   &      -0.003   &      -0.038   &       0.051   \\
+                    &     (0.007)   &     (0.006)   &     (0.038)   &     (0.066)   \\
+$\text{Liquidity ratio}_{it-1}$&       0.070***&       0.062***&       0.068   &       0.306   \\
+                    &     (0.026)   &     (0.022)   &     (0.050)   &     (0.192)   \\
+$\text{Real HH deposit growth}_{it-1}$&       0.062   &       0.020   &      -0.073   &       0.012   \\
+                    &     (0.098)   &     (0.098)   &     (0.100)   &     (0.124)   \\
+\midrule
+Observations        &         436   &         436   &         436   &         378   \\
+F-test              &       8.507   &       7.567   &       2.459   &      19.631   \\
+Estimator           &         OLS   &         OLS   &      Within   &          AB   \\
+Year FE             &          No   &         Yes   &         Yes   &         Yes   \\
+Country FE          &          No   &          No   &         Yes   &         Yes   \\
+N. of instruments   &               &               &               &          34   \\
+AR(2) \(p\)         &               &               &               &       0.590   \\
+Hansen J test \(p\) &               &               &               &       0.094   \\
+\bottomrule                                          \multicolumn{5}{l}{\footnotesize This table reports estimation results for the following model:}\\                                          \multicolumn{5}{c}{\footnotesize $ \Delta y_{it} = \beta_1 Election_{it} + \beta_2 Election_{it} \times DI_{it-1} + \beta_3 DI_{it-1} + X'_{it-1}\kappa + \psi \Delta y_{it-1} + \alpha_i + \alpha_t + \varepsilon_{it}, $}\\                                          \multicolumn{5}{m{\linewidth}}{\footnotesize where $ \Delta y_{it} $ denotes year-on-year percent change in real household deposits with commercial banks in country $ i $ and year $ t $, $ Election_{it} $ is 1 if country $ i $ held an executive election in year $ t $, $ DI_{it-1} $ is 1 if country $ i $ has explicit deposit insurance scheme in year $ t-1 $, $ X_{it-1} $ is the control vector. Standard errors are clustered on the country level and reported in parentheses. Critical values for F-test at 0.01 significance level and actual degrees of freedom range from 2.11 to 2.46. \( * p<0.1, ** p<0.05, *** p<0.01 \).}\\                                          \end{longtable}

@@ -1,0 +1,39 @@
+\begin{longtable}{m{8cm}*{4}{c}}                                         \caption{Political Uncertainty and Bank Loan Growth: Baseline Results \label{baselineloans}}\\                                         \toprule                                         &\multicolumn{4}{c}{$\text{Real loan growth}_{it}$} \\ \cmidrule(lr){2-5}
+                    &         (1)   &         (2)   &         (3)   &         (4)   \\
+\midrule\endfirsthead                                         \multicolumn{5}{r}{\textit{Table~\ref{baselineloans} continued}} \\                                         \toprule\endhead\midrule\endfoot\endlastfoot
+$\text{Election}_{it}$&      -0.655   &      -0.445   &      -0.428   &      -0.204   \\
+                    &     (0.945)   &     (0.849)   &     (0.829)   &     (0.956)   \\
+$\text{Inflation CPI}_{it-1}$&      -0.230** &      -0.139** &      -0.277***&      -0.057   \\
+                    &     (0.091)   &     (0.070)   &     (0.094)   &     (0.173)   \\
+$\log(\text{Real GDP per capita}_{it-1})$&      -0.866** &      -0.632   &      -6.097   &     -23.237   \\
+                    &     (0.395)   &     (0.397)   &     (6.616)   &    (16.388)   \\
+$\text{Real GDP growth}_{it-1}$&       0.400***&       0.515***&       0.407***&      -0.095   \\
+                    &     (0.126)   &     (0.134)   &     (0.154)   &     (0.182)   \\
+$\text{Unemployment}_{it-1}$&      -0.031   &      -0.027   &      -0.436** &      -0.326   \\
+                    &     (0.046)   &     (0.049)   &     (0.206)   &     (0.355)   \\
+$\text{Capital ratio}_{it-1}$&       0.004   &       0.056   &      -0.279   &       1.355   \\
+                    &     (0.130)   &     (0.126)   &     (0.385)   &     (1.037)   \\
+$\text{Credit to deposits}_{it-1}$&      -0.014** &      -0.014** &      -0.067*  &       0.005   \\
+                    &     (0.007)   &     (0.006)   &     (0.037)   &     (0.082)   \\
+$\text{Bank concentration}_{it-1}$&       0.009   &       0.007   &       0.061   &       0.235   \\
+                    &     (0.017)   &     (0.016)   &     (0.063)   &     (0.275)   \\
+$\text{Liquidity ratio}_{it-1}$&       0.068***&       0.054** &       0.078   &       0.279*  \\
+                    &     (0.023)   &     (0.020)   &     (0.058)   &     (0.143)   \\
+$\text{Real loan growth}_{it-1}$&       0.434***&       0.378***&       0.279***&       0.362***\\
+                    &     (0.058)   &     (0.058)   &     (0.064)   &     (0.093)   \\
+$\text{Property rights}_{it-1}$&      -0.034   &      -0.049   &      -0.216** &      -0.290*  \\
+                    &     (0.031)   &     (0.032)   &     (0.088)   &     (0.149)   \\
+$\text{Corruption perception}_{it-1}$&      -0.015   &       0.003   &      -0.125   &      -0.141   \\
+                    &     (0.038)   &     (0.037)   &     (0.112)   &     (0.169)   \\
+$\text{Weak C\&B}_{it}$&      -0.192   &      -0.139   &      -0.861   &       0.397   \\
+                    &     (0.549)   &     (0.520)   &     (0.935)   &     (1.311)   \\
+\midrule
+Observations        &         744   &         744   &         744   &         662   \\
+F-test              &      59.770   &      62.834   &      30.931   &      12.743   \\
+Estimator           &         OLS   &         OLS   &      Within   &          AB   \\
+Year FE             &          No   &         Yes   &         Yes   &         Yes   \\
+Country FE          &          No   &          No   &         Yes   &         Yes   \\
+N. of instruments   &               &               &               &          43   \\
+AR(2) \(p\)         &               &               &               &       0.125   \\
+Hansen J test \(p\) &               &               &               &       0.039   \\
+\bottomrule                                          \multicolumn{5}{l}{\footnotesize This table presents estimates of the following model:}\\                                          \multicolumn{5}{c}{\footnotesize $ \Delta y_{it} = \beta Election_{it} + X'_{it-1}\kappa +\psi \Delta y_{it-1} + \alpha_i + \alpha_t + \varepsilon_{it}, $}\\                                          \multicolumn{5}{m{\linewidth}}{\footnotesize where $ \Delta y_{it} $ denotes year-on-year percent change in real loans outstanding with commercial banks in country $ i $ and year $ t $, $ Election_{it} $ is 1 if country $ i $ held an executive election in year $ t $ and $ X_{it-1} $ is the control vector. Standard errors are clustered on the country level and reported in parentheses. Critical values for F-test at 0.01 significance level and actual degrees of freedom range from 2.02 to 2.38. \( * p<0.1, ** p<0.05, *** p<0.01 \).}\\                                          \end{longtable}

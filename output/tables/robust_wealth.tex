@@ -1,0 +1,19 @@
+\begin{longtable}{m{4.5cm}*{6}{c}}                                         \caption{Robustness Checks: Do checks \& balances have an effect independent of wealth level?\label{robustindices1}}\\                                         \toprule                                         &\multicolumn{3}{c}{$\text{Real HH deposit growth}_{it}$} & \multicolumn{3}{c}{$\text{Real loan growth}_{it}$} \\ \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+                    &         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+\midrule\endfirsthead                                         \multicolumn{7}{r}{\textit{Table~\ref{robustindices1} continued}} \\                                         \toprule\endhead\midrule\endfoot\endlastfoot
+$\text{Election}_{it}$&      -0.320   &      -0.264   &      -0.082   &      -2.998***&      -3.004***&      -2.828** \\
+                    &     (0.924)   &     (0.883)   &     (1.036)   &     (0.934)   &     (0.899)   &     (1.163)   \\
+$\text{Election}_{it}$ $\times$ $\text{Weak C\&B}_{it}$&      -2.284   &      -1.878   &      -1.983   &       3.625** &       3.847** &       3.043   \\
+                    &     (2.150)   &     (2.063)   &     (2.194)   &     (1.560)   &     (1.598)   &     (1.971)   \\
+$\text{Election}_{it}$ $\times$ $\text{Poor}_{it-1}$&      -1.657   &      -1.959   &      -0.170   &       2.646   &       2.434   &       3.705*  \\
+                    &     (2.632)   &     (2.643)   &     (2.580)   &     (1.742)   &     (1.741)   &     (1.956)   \\
+\midrule
+Observations        &         530   &         530   &         472   &         744   &         744   &         662   \\
+F-test              &        7.19   &        7.32   &        3.27   &       63.16   &       40.83   &       14.96   \\
+Estimator           &         OLS   &      Within   &          AB   &         OLS   &      Within   &          AB   \\
+Year FE             &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+Country FE          &          No   &         Yes   &         Yes   &          No   &         Yes   &         Yes   \\
+N. of instruments   &               &               &          41   &               &               &          46   \\
+AR(2) \(p\)         &               &               &       0.701   &               &               &       0.151   \\
+Hansen J test \(p\) &               &               &       0.340   &               &               &       0.026   \\
+\bottomrule                                          \multicolumn{7}{m{\linewidth}}{\footnotesize This table reports the results of re-estimating Equation~\eqref{model2} -- with year-on-year percent change in real household deposits with commercial banks in country $ i $ and year $ t $ as well as with year-on-year percent change in real loans outstanding as dependent variables -- adding wealth level dummy $ Poor_{it-1} $ and its interaction with $ Election_{it} $ to the controls. $ Poor_{it-1} $ is coded as 1 if the country-year belongs to the bottom 50 percentile with respect to real per capita GDP in US dollars. $ Election_{it} $ is 1 if country $ i $ held an executive election in year $ t $ and $ Weak\ C\&B_{it} $ is 1 if country-year belongs to the bottom half of all country-years with respect to constraints on executive authority. Standard errors are clustered on the country level and reported in parentheses. Critical values for F-test at 0.01 significance level and actual degrees of freedom range from 1.98 to 2.14. \( * p<0.1, ** p<0.05, *** p<0.01 \). }\\                                          \end{longtable}

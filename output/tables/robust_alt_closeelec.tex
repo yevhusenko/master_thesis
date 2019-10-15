@@ -1,0 +1,17 @@
+\begin{longtable}{m{5.5cm}*{6}{c}}                                         \caption{Robustness Checks: Alternative Measure of Election Closeness\label{robustindices3}}\\                                         \toprule                                         &\multicolumn{3}{c}{$\text{Real HH deposit growth}_{it}$} & \multicolumn{3}{c}{$\text{Real loan growth}_{it}$} \\ \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+                    &         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+\midrule\endfirsthead                                         \multicolumn{7}{r}{\textit{Table~\ref{robustindices3} continued}} \\                                         \toprule\endhead\midrule\endfoot\endlastfoot
+$\text{Election}_{it}$&      -0.696   &      -0.520   &      -1.100   &       0.840   &       1.038   &       1.757   \\
+                    &     (1.374)   &     (1.405)   &     (1.547)   &     (1.297)   &     (1.381)   &     (1.457)   \\
+$\text{Close election}_{it}$ \textit{(alt.)}&      -1.730   &      -1.791   &       0.392   &      -2.362   &      -2.721   &      -3.778** \\
+                    &     (1.625)   &     (1.808)   &     (1.762)   &     (1.493)   &     (1.661)   &     (1.812)   \\
+\midrule
+Observations        &         530   &         530   &         472   &         744   &         744   &         662   \\
+F-test              &        7.34   &        5.56   &        2.97   &       60.35   &       37.33   &       15.60   \\
+Estimator           &         OLS   &      Within   &          AB   &         OLS   &      Within   &          AB   \\
+Year FE             &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+Country FE          &          No   &         Yes   &         Yes   &          No   &         Yes   &         Yes   \\
+N. of instruments   &               &               &          39   &               &               &          44   \\
+AR(2) \(p\)         &               &               &       0.812   &               &               &       0.091   \\
+Hansen J test \(p\) &               &               &       0.301   &               &               &       0.040   \\
+\bottomrule                                          \multicolumn{7}{m{\linewidth}}{\footnotesize This table reports the results of re-estimating Equation~\eqref{model3} -- with year-on-year percent change in real household deposits with commercial banks in country $ i $ and year $ t $ as well as with year-on-year percent change in real loans outstanding as dependent variables -- replacing $ Close\ Election_{it} $ based on popular-vote-share margins with one based on actual legislative seats won if country $ i $ is a parliamentary democracy and Electoral College votes for the USA -- the only presidential democracy in my sample that does not use popular vote to elect their executives. $ Close\ Election_{it}\ (alt.)$ is 1 if the margin of victory in the relevant election belongs to the bottom 50 percentile and $ Election_{it} $ is 1 if country $ i $ held an executive election in year $ t $. Standard errors are clustered on the country level and reported in parentheses. Critical values for F-test at 0.01 significance level and actual degrees of freedom range from 2.01 to 2.17. \( * p<0.1, ** p<0.05, *** p<0.01 \). }\\                                          \end{longtable}

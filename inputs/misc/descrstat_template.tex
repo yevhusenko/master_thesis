@@ -1,0 +1,61 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\renewcommand*{\arraystretch}{0.8}
+\begin{longtable}{l*{2}{|ccccc}}
+\caption{Descriptive Statistics\label{descrstat1}}\\
+\hline
+					& \multicolumn{5}{c|}{Sample A} & \multicolumn{5}{c}{Sample B} \\
+\hline
+\endfirsthead
+\multicolumn{11}{r}{\textit{Table~\ref{descrstat1} continued}} \\
+\hline
+					& \multicolumn{5}{c|}{Sample A} & \multicolumn{5}{c}{Sample B} \\
+\hline
+                    &        Mean &   Median&   Min&    Max&      SD&        Mean&  Median&      Min&     Max&   SD\\
+\hline
+\endhead
+\hline
+\endfoot\endlastfoot
+
+\textbf{Elections:} & & & & & & & & & & \\
+Total N. of elections     &         \multicolumn{5}{c|}{133} & \multicolumn{5}{c}{184} \\
+\hspace{2mm} \textit{of which}  & & & & & & & & & & \\
+with weak C\&B           &          \multicolumn{5}{c|}{47} & \multicolumn{5}{c}{77} \\
+with high C\&B           &          \multicolumn{5}{c|}{86} &   \multicolumn{5}{c}{107} \\
+close elections     &          \multicolumn{5}{c|}{66} &   \multicolumn{5}{c}{92} \\
+certain elections   &          \multicolumn{5}{c|}{67} &     \multicolumn{5}{c}{92} \\
+with no explicit dep. insurance&          \multicolumn{5}{c|}{17} & \multicolumn{5}{c}{32} \\
+with explicit dep. insurance&          \multicolumn{5}{c|}{97} &    \multicolumn{5}{c}{125} \\
+with right-wing incumbent&          \multicolumn{5}{c|}{41} &        \multicolumn{5}{c}{55} \\
+with centrist incumbent  &          \multicolumn{5}{c|}{18} &       \multicolumn{5}{c}{19} \\
+with left-wing incumbent &          \multicolumn{5}{c|}{39} &       \multicolumn{5}{c}{61} \\
+\hline
+                    &        Mean &   Median&   Min&    Max&      SD&        Mean&  Median&      Min&     Max&   SD\\
+\hline
+\textbf{Dependent variables:} & & & & & & & & & & \\
+$\text{Real HH deposit growth}_{it}$ &        5.81&        4.53&       -17.2&          61&        9.18&            &            &            &            &            \\
+$\text{Real loan growth}_{it}$ &            &            &            &            &            &        6.71&         4.8&       -15.3&        53.5&        11.4\\
+ & & & & & & & & & & \\
+\textbf{Macroeconomic variables:} & & & & & & & & & & \\
+$\text{Inflation CPI}_{it-1}$   &        3.59&        2.76&       -4.48&        48.7&        3.88&        4.14&        3.33&       -35.8&        48.7&        4.26\\
+$\log(\text{Real GDP per capita}_{it-1})$ &        9.59&        9.65&        5.83&        11.6&        1.19&        9.25&        9.33&        5.83&        11.6&        1.31\\
+$\text{Real GDP growth}_{it-1}$ &        2.62&        2.79&         -16&        11.6&        3.94&        3.13&         3.3&         -16&        22.8&        3.65\\
+$\text{Unemployment}_{it-1}$    &        9.56&        7.49&        2.25&        37.3&        6.38&        8.73&        7.05&        1.82&        37.3&         6.1\\
+ & & & & & & & & & & \\
+\textbf{Banking system variables:} & & & & & & & & & & \\
+$\text{Capital ratio}_{it-1}$   &         8.6&         7.9&         2.7&        21.2&         3.4&        9.04&        8.53&         2.7&        21.2&        3.27\\
+$\text{Deposits to GDP}_{it-1}$ &        71.8&        56.8&         8.9&         480&        59.5&        63.6&        51.3&        8.52&         480&        53.8\\
+$\text{Liquidity ratio}_{it-1}$  &        29.9&          26&        5.69&         125&        16.1&        30.6&          27&        5.69&         125&        15.6\\
+$\text{Credit to deposits}_{it-1}$&         119&         111&        17.8&         367&        54.7&         111&         100&        17.8&         367&        51.7\\
+$\text{Bank concentration}_{it-1}$   &        66.2&        66.4&        26.7&         100&        18.8&        64.1&        63.1&        26.7&         100&        17.9\\
+ & & & & & & & & & & \\
+\textbf{Institutional variables:} & & & & & & & & & & \\
+$\text{Property rights}_{it-1}$ &        61.5&          60&          15&          95&          23&        56.4&          50&          10&          95&        23.6\\
+$\text{Corruption perception}_{it-1}$ &        56.6&        52.5&          22&          97&        20.6&        51.7&          46&          19&          97&        21.1\\
+\hline
+Observations        &         \multicolumn{5}{c|}{530}&        \multicolumn{5}{c}{744}  \\
+\hline
+\multicolumn{11}{m{20cm}}{\setstretch{1}\footnotesize This table reports summary statistics, i.e., mean, median, standard deviation, minimum and maximum, for macroeconomic, banking and institutional regressors, as well as for the dependent variables. In addition, the table shows how executive elections are distributed across types relevant for the analysis. Sample A comprises observations which are usable in the baseline regression -- Equation~\eqref{model1} -- when $\text{Real HH deposit growth}_{it}$ is the dependent variable, and Sample B -- when $\text{Real loan growth}_{it}$ is the dependent variable. Dependent variables, banking-system variables and macroeconomic variables, apart from $\log(\text{Real GDP per capita}_{it-1})$, are measured in percent. $\log(\text{Real GDP per capita}_{it-1})$ is measured in log-units, while $\text{Property rights}_{it-1}$ is an index that ranges from 0 (worst) to 100 (best) and $\text{Corruption perception}_{it-1}$ -- an index that ranges from 0 (most corrupt) to 100 (least corrupt). $\text{Liquidity ratio}_{it-1}$ stands for liquid assets to deposits and short-term funding.}
+\end{longtable}
+
+}
